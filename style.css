@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	align-items: center;
+	background: url('assets/fondo-login.jpeg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Mulish', sans-serif;
+	height: 100vh;
+	justify-content: center;
+	overflow: hidden;	
+	width: 100%;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px 40px;
+}
+
+.container h1 {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.container a {
+	color: lightblue;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.form-control {
+	position: relative;
+	margin: 20px 0 40px;
+	width: 300px;
+}
+
+.form-control input {
+	background-color: transparent;
+	border: 0; 
+	border-bottom: 2px solid black;
+	display: block;
+	font-size: 18px;
+	padding: 25px 0;
+	width: 100%;
+} 
+
+.form-control input:focus, 
+.form-control input:valid {
+	border-bottom-color: lightblue;
+	outline: 0;
+}
+
+.form-control label {
+	position: absolute;
+	top: 15px; 
+	left: 0;
+}
+
+.form-control label span {
+	display: inline-block;
+	font-size: 18px;
+	min-width: 5px;
+	transition: 0.3 cubic-bezier(0.68, -0.55, 0.256, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+	color: lightblue;
+	transform: translateY(-30px);
+}
+
+.btn {
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+}
+.btn:focus {
+	outline: 0;
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.text {
+	margin-top: 30px;
+}
